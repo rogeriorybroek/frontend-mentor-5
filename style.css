@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root {
+    --linear-gradient: linear-gradient(hsl(249, 99%, 64%),hsl(278, 94%, 30%)) ;
+    --red: hsl(0, 100%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+}
+
+.left-side {
+    width: 300px;
+    height: 100vh;
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.left-side .card-front {
+    position: absolute;
+    width: 385px;
+    height: 215px;
+    border-radius: 15px;
+    top: 80px;
+    left: 80px;
+    background-image: url(/images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 300ms ease;
+}
+
+.left-side .card-back img {
+    position: absolute;
+    width: 375px;
+    height: 215px;
+    border-radius: 15px;
+    top: 350px;
+    left: 180px;
+    transition: all 300ms ease;
+}
+
+.left-side .card-front .card-logo img {
+    padding: 25px;
+    transition: all 300ms ease;
+}
+
+.left-side .card-front .card-num {
+    margin: 10px 0 30px 25px;
+    color: var(--white);
+    font-size: 25px;
+    transition: all 300ms ease;
+}
+
+.left-side .card-front .card-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    padding-bottom: 10px;
+    color: var(--white);
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+.right-side {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side .form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+.right-side .form .info {
+    margin: 20px 0;
+}
+
+.right-side .form label {
+    display: block;
+}
+
+.right-side .form input {
+    font-family: 'Space Grotesk', sans-serif;;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--light-grayish-violet);
+    color: var(--very-dark-violet)
+}
+
+.right-side .form input:focus-within {
+    border: 2px solid var(--linear-gradient);
+}
+
+.right-side .form .info-wrapper {
+    display: flex;
+    margin: 20px 0;
+}
+
+.right-side .form .info-wrapper .input-wrapper div {
+    display: flex;
+    margin-right: 20px;
+}
+
+.right-side .form .info-wrapper .input-wrapper div input{
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: var(--very-dark-violet);
+    color: var(--white);
+    padding: 15px;
+    border-style: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.span-error {
+    display: none;
+    color: var(--red);
+    font-size: 12px;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 970px) and (max-width: 1160px) {
+    .left-side .card-front {
+        
+        width: 300px;
+        height: 180px;
+        
+        top: 80px;
+        left: 80px;
+    }
+
+    .left-side .card-back img {
+        width: 300px;
+        height: 180px;
+        
+    }
+
+    .left-side .card-front .card-logo img {
+        padding: 25px;
+        width: 100px
+    }
+    
+    .left-side .card-front .card-num {
+        margin: 10px 0 15px 25px;
+        font-size: 15px;
+        color: var(--white);
+        font-size: 20px;
+    }
+    
+    .left-side .card-front .card-info .card-name {
+        font-size: 15px;
+    }
+
+    .left-side .card-front .card-info {
+        
+        margin: 0 30px;
+        padding-bottom: 10px;
+        
+    }
+}
+
+@media (min-width: 760px) and (max-width: 980px) {
+    .left-side .card-front {
+        
+        width: 300px;
+        height: 180px;
+        
+        top: 80px;
+        left: 50px;
+    }
+
+    .left-side .card-back img {
+        width: 300px;
+        height: 180px;
+
+        top: 330px;
+        left: 50px;
+        
+    }
+
+    .left-side .card-front .card-logo img {
+        padding: 25px;
+        width: 100px
+    }
+
+    .left-side .card-front .card-num {
+        margin: 10px 0 15px 25px;
+        font-size: 14px;
+        color: var(--white);
+        font-size: 18px;
+    }
+    
+    .left-side .card-front .card-info .card-name {
+        font-size: 13px;
+    }
+
+    .left-side .card-front .card-info .card-date {
+        font-size: 13px;
+    }
+
+    .left-side .card-front .card-info {
+        
+        margin: 0 30px;
+        padding-bottom: 10px;
+        
+    }
+}

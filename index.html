@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="left-side">
+
+    <div class="card-front">
+      <div class="card-logo">
+        <img src="/images/card-logo.svg" alt="logo">
+      </div>
+
+      <div class="card-num">
+        
+      </div>
+
+      <div class="card-info">
+        <div class="card-name">
+          
+        </div>
+
+        <div class="card-date">
+          
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card-back">
+      <img src="/images/bg-card-back.png" alt="back">
+    </div> 
+
+  </div>
+
+  <div class="right-side">
+    <form class="form" action="">
+      
+      <div class="info">
+        <label for="input-name">CARD HOLDER NAME</label>
+        <input id="input-name" type="text" placeholder="e.g. Rogerio Van Rybroek Jr.">
+        <span class="span-error">Can't be blank</span>
+      </div>
+
+      <div class="info">
+        <label for="input-card-num">CARD NUMBER</label>
+        <input id="input-card-num" type="number" placeholder="1234 5678 9123 0000">
+        <span class="span-error">Can't be blank</span>
+        <span class="span-error">Too much numbers</span>
+      </div>
+
+
+      <div class="info-wrapper">
+
+        <div class="input-wrapper">
+          <label for="">EXP. DATE (MM/YY)</label>
+
+          <div>
+            <input id="input-month" type="number" placeholder="MM">
+            <input id="input-year" type="number" placeholder="YY">
+          </div>
+          <span class="span-error">Can't be blank</span>
+
+        </div>
+
+        <div>
+          <label for="">CVC</label>
+          <input id="input-cvc" type="number" placeholder="e.g. 123">
+          <span class="span-error">Can't be blank</span>
+        </div>
+
+        
+      </div>
+
+      <button id="btn-confirm" type="submit" class="btn">Confirm</button>
+
+
+    </form>
+  </div>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
